@@ -1,0 +1,75 @@
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: rgba(255, 255, 255, 0.82);
+  --card-foreground: #111827;
+  --sidebar-bg: rgba(255, 255, 255, 0.8);
+  --sidebar-border: rgba(148, 163, 184, 0.2);
+  --panel: rgba(255, 255, 255, 0.8);
+  --panel-border: rgba(148, 163, 184, 0.22);
+  --muted: #64748b;
+  --muted-strong: #334155;
+  --shadow-soft: rgba(15, 23, 42, 0.08);
+}
+
+html.dark {
+  --background: #090d16;
+  --foreground: #f8fafc;
+  --card: rgba(15, 23, 42, 0.82);
+  --card-foreground: #e2e8f0;
+  --sidebar-bg: rgba(15, 23, 42, 0.82);
+  --sidebar-border: rgba(51, 65, 85, 0.8);
+  --panel: rgba(15, 23, 42, 0.8);
+  --panel-border: rgba(51, 65, 85, 0.8);
+  --muted: #94a3b8;
+  --muted-strong: #cbd5e1;
+  --shadow-soft: rgba(2, 6, 23, 0.42);
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(148, 163, 184, 0.18);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.45);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.7);
+}
+
+@keyframes glow-pulse {
+  0% {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.7);
+  }
+}
+
+.animate-glow {
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}

@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build output
+.next/
+out/
+build/
+client/.next/
+client/out/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Deployment/cache output
+.vercel/
+.cache/
+.turbo/
+
+# Uploads and temp files
+server/uploads/
+tmp/
+temp/

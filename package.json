@@ -1,0 +1,21 @@
+{
+  "name": "agentflow-ai",
+  "version": "1.0.0",
+  "description": "Agentic AI Automation Platform (Agentflow_AI)",
+  "scripts": {
+    "dev": "node start-dev.js",
+    "dev:server": "cd server && node src/server.js",
+    "dev:client": "cd client && node node_modules/next/dist/bin/next dev -p 3000",
+    "start": "node start-dev.js"
+  },
+  "keywords": [
+    "agentic-ai",
+    "workflow-automation",
+    "multi-agent",
+    "react-flow",
+    "nextjs",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT"
+}
