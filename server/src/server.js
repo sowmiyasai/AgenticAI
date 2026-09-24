@@ -106,9 +106,11 @@ async function startServer() {
     // Initialize execution queue
     getExecutionQueue();
 
-    httpServer.listen(config.PORT, () => {
+    const PORT = process.env.PORT || 5000;
+
+httpServer.listen(PORT, '0.0.0.0', () => {
       console.log(`====================================================`);
-      console.log(`🚀 Agentflow_AI Server running on port: ${config.PORT}`);
+      console.log(`🚀 Agentflow_AI Server running on port: ${PORT}`);
       console.log(`🌐 Client Origin: ${config.CLIENT_URL}`);
       console.log(`⚡ Mode: ${config.NODE_ENV}`);
       console.log(`====================================================`);
